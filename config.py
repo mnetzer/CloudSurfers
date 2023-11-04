@@ -1,7 +1,7 @@
 import os
 
 class Config:
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://<user>:<user>@/<Users>?unix_socket=/cloudsql/cloudsurfers-403912:us-central1:user-sql'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://<user>:<user>@/<users>?unix_socket=/cloudsql/cloudsurfers-403912:us-central1:user-sql'
     # Other configuration options
 
     # To generate a secret key, you can use os.urandom(24)
