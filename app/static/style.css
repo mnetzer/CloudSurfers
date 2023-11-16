@@ -8,14 +8,14 @@
 
 .comparison-portal .div {
   background-color: #ffffff;
-  width: 1440px;
+  width: 100%;
   height: 1024px;
   position: relative;
 }
 
 .comparison-portal .overlap {
   position: absolute;
-  width: 1440px;
+  width: 100%;
   height: 77px;
   top: 0;
   left: 0;
@@ -23,6 +23,19 @@
   border: 1px solid;
   border-color: #000000;
 }
+
+.comparison-portal .overlap-1 {
+  position: absolute;
+  width: 90%;
+  height: 947px;
+  top: 77px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: none;
+  border-color: #000000;
+}
+
 
 .comparison-portal .image {
   width: 76px;
@@ -64,7 +77,8 @@
   width: 718px;
   height: 39px;
   top: 19px;
-  left: 431px;
+  left: 50%;
+  margin-left: -359px;
   background-color: #d9d9d9;
 }
 
@@ -79,21 +93,20 @@
 
 .comparison-portal .text-wrapper-2 {
   position: absolute;
-  top: 12px;
-  left: 13px;
+  width: 678px;
+  height: 37px;
+  top: 1px;
+  left: 1px;
   font-family: "Inter", Helvetica;
   font-weight: 400;
-  color: #ffffff;
-  font-size: 10px;
+  color: #363d48;
+  font-size: 20px;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
 }
 
 .comparison-portal .text-wrapper-3 {
-  position: absolute;
-  top: 30px;
-  left: 1166px;
   font-family: "Inter", Helvetica;
   font-weight: 400;
   color: #ffffff;
@@ -102,12 +115,32 @@
   line-height: normal;
 }
 
+#tw3_1 {
+  position: absolute;
+  top: 30px;
+  right: 350px;
+}
+
+#tw3_2 {
+  position: absolute;
+  top: 30px;
+  right: 235px;
+}
+
+.loginAndRegister {
+  color: white;
+}
+
+.loginAndRegister:hover {
+  font-weight: 600;
+}
+
 .comparison-portal .overlap-2 {
   position: absolute;
   width: 186px;
   height: 55px;
   top: 13px;
-  left: 1219px;
+  right: 10px;
 }
 
 .comparison-portal .text-wrapper-4 {
@@ -121,6 +154,38 @@
   font-size: 13px;
   letter-spacing: 0;
   line-height: normal;
+}
+
+.comparison-portal .text-wrapper-4_2 {
+  position: absolute;
+  width: 161px;
+  top: 10px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+.teamName {
+  color: white;
+  font-size: 25px;
+}
+
+.teamName:hover {
+  font-weight: 600;
+}
+
+.userName {
+  color: white;
+}
+
+.userName:hover {
+  font-weight: 600;
 }
 
 .comparison-portal .ellipse {
@@ -154,8 +219,8 @@
 
 .comparison-portal .text-wrapper-5 {
   position: absolute;
-  top: 122px;
-  left: 416px;
+  top: 50px;
+  left: 0;
   font-family: "Inter", Helvetica;
   font-weight: 400;
   color: #000000;
@@ -166,405 +231,186 @@
 
 .comparison-portal .overlap-3 {
   position: absolute;
-  width: 300px;
-  height: 399px;
-  top: 124px;
-  left: 37px;
-  background-color: #d9d9d9;
-  border: 1px solid;
-  border-color: #000000;
-}
-
-.comparison-portal .text-wrapper-6 {
-  position: absolute;
-  top: 29px;
-  left: 75px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .line {
-  top: 81px;
-  left: 28px;
-  position: absolute;
-  width: 271px;
-  height: 1px;
-  object-fit: cover;
-}
-
-.comparison-portal .line-wrapper {
-  position: absolute;
-  width: 271px;
-  height: 1px;
-  top: 161px;
-  left: 29px;
-  background-image: url(./img/line-15.svg);
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.comparison-portal .line-2 {
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 271px;
-  height: 1px;
-  object-fit: cover;
-}
-
-.comparison-portal .line-3 {
-  top: 236px;
-  left: 28px;
-  position: absolute;
-  width: 271px;
-  height: 1px;
-  object-fit: cover;
-}
-
-.comparison-portal .overlap-4 {
-  position: absolute;
-  width: 271px;
-  height: 67px;
-  top: 260px;
-  left: 29px;
-}
-
-.comparison-portal .overlap-5 {
-  position: absolute;
-  width: 271px;
+  width: 100%;
   height: 60px;
-  top: 7px;
+  top: 100px;
   left: 0;
+  background-color: #ffffff;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: flex-start;
+  }
+
+.overlap-3_1 {
+  height:50px;
+  margin-top: 27px;
+  display: inline-block;
 }
 
-.comparison-portal .line-4 {
-  top: 49px;
-  left: 0;
-  position: absolute;
-  width: 271px;
-  height: 1px;
-  object-fit: cover;
+.overlap-3_2 {
+  height:50px;
+  margin-top: 27px;
+  margin-left: 50px;
 }
 
-.comparison-portal .text-wrapper-7 {
-  width: 217px;
-  font-weight: 700;
-  font-size: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-family: "Inter", Helvetica;
-  color: #000000;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.comparison-portal .image-4 {
-  width: 35px;
-  height: 35px;
-  top: 0;
-  left: 225px;
-  position: absolute;
-  object-fit: cover;
-}
-
-.comparison-portal .pickup-date {
-  position: absolute;
-  width: 144px;
-  top: 347px;
-  left: 28px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.comparison-portal .text-wrapper-8 {
-  position: absolute;
-  width: 93px;
-  top: 188px;
-  left: 28px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.comparison-portal .text-wrapper-9 {
-  position: absolute;
-  width: 117px;
-  top: 108px;
-  left: 28px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.comparison-portal .image-5 {
-  width: 35px;
-  height: 35px;
-  top: 104px;
-  left: 253px;
-  position: absolute;
-  object-fit: cover;
-}
-
-.comparison-portal .image-6 {
-  width: 35px;
-  height: 35px;
-  top: 343px;
-  left: 253px;
-  position: absolute;
-  object-fit: cover;
-}
-
-.comparison-portal .image-7 {
-  width: 35px;
-  height: 35px;
-  top: 181px;
-  left: 253px;
-  position: absolute;
-  object-fit: cover;
-}
-
-.comparison-portal .image-8 {
+.image-filter{
   width: 30px;
-  height: 34px;
-  top: 25px;
-  left: 33px;
-  position: absolute;
-  object-fit: cover;
+  height: 30px;
+  top: 5px;
+}
+
+.imagePlus {
+  display: inline-block;
+  width: 20px;
+  height:20px;
+  margin-left: 5px;
+}
+
+.text-wrapper-5_1 {
+  display: inline-block;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
 .comparison-portal .rectangle {
   position: absolute;
-  width: 1440px;
+  width: 100%;
   height: 35px;
-  top: 989px;
+  top: 1024px;
   left: 0;
   background-color: #363d48;
   border: 1px solid;
   border-color: #000000;
 }
 
-.comparison-portal .text-wrapper-10 {
+.overlap-products {
+  width: 100%;
   position: absolute;
-  width: 252px;
-  top: 398px;
-  left: 416px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-11 {
-  position: absolute;
-  width: 186px;
-  top: 399px;
-  left: 746px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-12 {
-  position: absolute;
-  width: 186px;
-  top: 400px;
-  left: 1076px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-13 {
-  top: 472px;
-  left: 416px;
-  position: absolute;
-  width: 319px;
-  font-family: "Inter", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 15px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-14 {
-  top: 473px;
-  left: 746px;
-  position: absolute;
-  width: 319px;
-  font-family: "Inter", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 15px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-15 {
-  top: 474px;
-  left: 1076px;
-  position: absolute;
-  width: 319px;
-  font-family: "Inter", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 15px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-16 {
-  position: absolute;
-  width: 171px;
-  top: 426px;
-  left: 417px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 15px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-17 {
-  top: 427px;
-  left: 747px;
-  position: absolute;
-  width: 171px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 15px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-18 {
-  top: 428px;
-  left: 1077px;
-  position: absolute;
-  width: 171px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 15px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .overlap-6 {
-  position: absolute;
-  width: 273px;
-  height: 17px;
-  top: 448px;
-  left: 417px;
-}
-
-.comparison-portal .text-wrapper-19 {
-  width: 273px;
-  font-weight: 400;
-  font-size: 15px;
-  white-space: nowrap;
-  position: absolute;
-  top: 0;
+  top: 175px;
   left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.olProducts-line {
+  width: 100%;
+  height:350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.waste {
+  width: 300px;
+  height: 350px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.wastePic {
+  width: 100%%;
+  margin-bottom: 7px;
+}
+
+.wasteName {
+  width: 267px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  margin-bottom: 7px;
+}
+
+.wastePrice{
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  margin-bottom: 7px;
+}
+
+.companyName {
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  margin-bottom: 7px;
+}
+
+.consumerRate {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 7px;
+}
+
+.crText {
+  font-weight: 400;
+  font-size: 15px;
+  white-space: nowrap;
   font-family: "Inter", Helvetica;
   color: #000000;
   letter-spacing: 0;
   line-height: normal;
+  margin-right: 25px;
 }
 
-.comparison-portal .image-9 {
-  position: absolute;
+.imageStar {
   width: 15px;
   height: 14px;
-  top: 3px;
-  left: 146px;
   object-fit: cover;
+  margin-left: 5px;
 }
 
-.comparison-portal .overlap-7 {
-  position: absolute;
-  width: 273px;
-  height: 17px;
-  top: 449px;
-  left: 747px;
+.earliestPickupDate {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  margin-bottom: 12px;
 }
 
-.comparison-portal .image-10 {
-  width: 15px;
-  height: 14px;
-  top: 3px;
-  left: 163px;
-  position: absolute;
-  object-fit: cover;
+.pickupButtons{
+  width: 270px;
+  height: 44px;
+  margin-bottom: 7px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.comparison-portal .overlap-8 {
-  position: absolute;
-  width: 273px;
-  height: 17px;
-  top: 450px;
-  left: 1077px;
-}
-
-.comparison-portal .group {
-  top: 503px;
-  left: 417px;
-  position: absolute;
-  width: 273px;
-  height: 36px;
-}
-
-.comparison-portal .div-wrapper {
-  position: absolute;
+.buttonDetails {
   width: 128px;
   height: 44px;
-  top: 0;
-  left: -4px;
   background-image: url(./img/rectangle-21.png);
   background-size: 100% 100%;
 }
 
-.comparison-portal .text-wrapper-20 {
-  position: absolute;
-  width: 96px;
-  height: 26px;
-  top: 5px;
-  left: 16px;
+.buttonOrderPickup {
+  width: 128px;
+  height: 44px;
+  background-image: url(./img/rectangle-21.png);
+  background-size: 100% 100%;
+}
+
+.buttonText {
+  width: 128px;
   font-family: "Inter", Helvetica;
   font-weight: 700;
   color: #ffffff;
@@ -574,340 +420,4 @@
   line-height: normal;
 }
 
-.comparison-portal .overlap-9 {
-  position: absolute;
-  width: 128px;
-  height: 44px;
-  top: 0;
-  left: 145px;
-  background-image: url(./img/rectangle-21.png);
-  background-size: 100% 100%;
-}
-
-.comparison-portal .group-2 {
-  top: 503px;
-  left: 747px;
-  position: absolute;
-  width: 273px;
-  height: 36px;
-}
-
-.comparison-portal .group-3 {
-  top: 503px;
-  left: 1075px;
-  position: absolute;
-  width: 273px;
-  height: 36px;
-}
-
-.comparison-portal .pavel-neznanov {
-  position: absolute;
-  width: 270px;
-  height: 140px;
-  top: 245px;
-  left: 416px;
-  object-fit: cover;
-}
-
-.comparison-portal .text-wrapper-21 {
-  position: absolute;
-  width: 186px;
-  top: 778px;
-  left: 747px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-22 {
-  top: 852px;
-  left: 747px;
-  position: absolute;
-  width: 319px;
-  font-family: "Inter", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 15px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-23 {
-  top: 806px;
-  left: 748px;
-  position: absolute;
-  width: 171px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 15px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .overlap-10 {
-  position: absolute;
-  width: 273px;
-  height: 17px;
-  top: 828px;
-  left: 748px;
-}
-
-.comparison-portal .group-4 {
-  top: 881px;
-  left: 745px;
-  position: absolute;
-  width: 273px;
-  height: 36px;
-}
-
-.comparison-portal .pavel-neznanov-2 {
-  left: 747px;
-  position: absolute;
-  width: 270px;
-  height: 140px;
-  top: 627px;
-  object-fit: cover;
-}
-
-.comparison-portal .text-wrapper-24 {
-  position: absolute;
-  width: 268px;
-  top: 778px;
-  left: 1074px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-25 {
-  top: 852px;
-  left: 1074px;
-  position: absolute;
-  width: 319px;
-  font-family: "Inter", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 15px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-26 {
-  top: 806px;
-  left: 1075px;
-  position: absolute;
-  width: 171px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 15px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .overlap-11 {
-  position: absolute;
-  width: 273px;
-  height: 17px;
-  top: 828px;
-  left: 1075px;
-}
-
-.comparison-portal .group-5 {
-  top: 881px;
-  left: 1073px;
-  position: absolute;
-  width: 273px;
-  height: 36px;
-}
-
-.comparison-portal .pavel-neznanov-3 {
-  left: 1073px;
-  position: absolute;
-  width: 270px;
-  height: 140px;
-  top: 627px;
-  object-fit: cover;
-}
-
-.comparison-portal .andrey-haimin {
-  position: absolute;
-  width: 270px;
-  height: 140px;
-  top: 245px;
-  left: 746px;
-  object-fit: cover;
-}
-
-.comparison-portal .text-wrapper-27 {
-  position: absolute;
-  width: 267px;
-  top: 778px;
-  left: 417px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-28 {
-  top: 593px;
-  left: 417px;
-  position: absolute;
-  width: 267px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-29 {
-  top: 211px;
-  left: 415px;
-  position: absolute;
-  width: 267px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-30 {
-  position: absolute;
-  width: 267px;
-  top: 593px;
-  left: 748px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-31 {
-  top: 211px;
-  left: 746px;
-  position: absolute;
-  width: 267px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-32 {
-  top: 593px;
-  left: 1075px;
-  position: absolute;
-  width: 267px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-33 {
-  position: absolute;
-  width: 267px;
-  top: 211px;
-  left: 1073px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-34 {
-  top: 852px;
-  left: 417px;
-  position: absolute;
-  width: 319px;
-  font-family: "Inter", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 15px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .text-wrapper-35 {
-  top: 806px;
-  left: 418px;
-  position: absolute;
-  width: 171px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 15px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.comparison-portal .overlap-12 {
-  position: absolute;
-  width: 273px;
-  height: 17px;
-  top: 828px;
-  left: 418px;
-}
-
-.comparison-portal .group-6 {
-  top: 881px;
-  left: 415px;
-  position: absolute;
-  width: 273px;
-  height: 36px;
-}
-
-.comparison-portal .andrey-haimin-qfyzn {
-  position: absolute;
-  width: 270px;
-  height: 140px;
-  top: 627px;
-  left: 417px;
-  object-fit: cover;
-}
-
-.comparison-portal .possessed {
-  position: absolute;
-  width: 270px;
-  height: 140px;
-  top: 245px;
-  left: 1075px;
-  object-fit: cover;
-}
+/*following to be deleted*/
