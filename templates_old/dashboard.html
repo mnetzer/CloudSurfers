@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../static/globals.css" />
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+  <body>
+    <div class="comparison-portal">
+      <div class="div">
+        <div class="overlap">
+          <img class="image" src="../static/img/image-3.png" />
+          <div class="text-wrapper">Update Location</div>
+          <p class="p">Buyers near you: Mannheim 68167</p>
+          <div class="overlap-group">
+            <img class="img" src="../static/img/image-12.png" />
+            <input class="text-wrapper-2" type="text" placeholder="Search Buyers">
+          </div>
+        </div>
+
+        <div class="text-wrapper-3" id="tw3_1"><a class="loginAndRegister" href="#">Latest on Sustainability</a></div>
+        <div class="text-wrapper-3" id="tw3_2"><a class="loginAndRegister" href="{{ url_for('login3') }}">Login</a></div>
+        <div class="overlap-2">
+          <div class="text-wrapper-4"><a class="loginAndRegister" href="{{ url_for('login3') }}">Create an Account</a></div>
+          <div class="ellipse"></div>
+          <img class="image-2" src="../static/img/image-39.png" />
+        </div>
+        <img class="image-3" src="../static/img/image-38.png" />
+      </div>
+
+      <div class="overlap-1">
+        <p class="text-wrapper-5">Waste Buyers Near You !</p>
+        <div class="overlap-3">
+          <div class="overlap-3_1">
+            <img class="image-filter" src="../static/img/image-37.png" />
+          </div>
+          <div class="overlap-3_2">
+            <div class="text-wrapper-5_1">Price Level</div>
+            <img class="imagePlus" src="../static/img/image-35.png" />
+          </div>
+          <div class="overlap-3_2">
+            <div class="text-wrapper-5_1">Location</div>
+            <img class="imagePlus" src="../static/img/image-35.png" />
+          </div>
+          <div class="overlap-3_2">
+            <div class="text-wrapper-5_1">Consumer Rating</div>
+            <img class="imagePlus" src="../static/img/image-35.png" />
+          </div>
+          <div class="overlap-3_2">
+            <div class="text-wrapper-5_1">Waste Type</div>
+            <img class="imagePlus" src="../static/img/image-35.png" />
+          </div>
+          <div class="overlap-3_2">
+            <div class="text-wrapper-5_1">Pickup Date</div>
+            <img class="imagePlus" src="../static/img/image-35.png" />
+          </div>
+        </div>
+
+
+        <div class="overlap-products">
+          <div class="olProducts-line">
+            <div class="waste">
+              <div class="wasteName">Aluminum mixed</div>
+              <img class="wastePic" src="../static/img/waste-aluminumMixed.png" />
+              <div class="wastePrice">€ 1.03 / Kilo</div>
+              <div class="companyName">Recyclingzentrum Mannheim</div>
+              <div class="consumerRate">
+                <div class="crText">Consumer rate:</div>
+                <img class="imageStar" src="../static/img/image-29.png" />
+              </div>
+              <div class="earliestPickupDate">Earliest pickup date: 28.11.2023</div>
+              <div class="pickupButtons">
+                <div class="buttonDetails"><div class="buttonText">Details</div></div>
+                <div class="buttonOrderPickup"><a href="{{ url_for('pickup_unloggedin') }}"><div class="buttonText">Order Pickup</div></a></div>
+              </div>
+            </div>
+            <div class="waste">
+              <div class="wasteName">Wood mixed</div>
+              <img class="wastePic" src="../static/img/waste-woodMixed.png" />
+              <div class="wastePrice">€ 0 / Kilo</div>
+              <div class="companyName">Recyclingzentrum Mannheim</div>
+              <div class="consumerRate">
+                <div class="crText">Consumer rate:</div>
+                <img class="imageStar" src="../static/img/image-29.png" />
+              </div>
+              <div class="earliestPickupDate">Earliest pickup date: 29.11.2023</div>
+              <div class="pickupButtons">
+                <div class="buttonDetails"><div class="buttonText">Details</div></div>
+                <div class="buttonOrderPickup"><a href="{{ url_for('pickup_unloggedin') }}"><div class="buttonText">Order Pickup</div></a></div>
+              </div>
+            </div>
+            <div class="waste">
+              <div class="wasteName">Plastic (PET)</div>
+              <img class="wastePic" src="../static/img/waste-plastic.png" />
+              <div class="wastePrice">€ 0.6 / Kilo</div>
+              <div class="companyName">MVV Umwelt</div>
+              <div class="consumerRate">
+                <div class="crText">Consumer rate:</div>
+                <img class="imageStar" src="../static/img/image-29.png" />
+              </div>
+              <div class="earliestPickupDate">Earliest pickup date: 28.11.2023</div>
+              <div class="pickupButtons">
+                <div class="buttonDetails"><div class="buttonText">Details</div></div>
+                <div class="buttonOrderPickup"><a href="{{ url_for('pickup_unloggedin') }}"><div class="buttonText">Order Pickup</div></a></div>
+              </div>
+            </div>
+            <div class="waste">
+              <div class="wasteName">Wood mixed</div>
+              <img class="wastePic" src="../static/img/waste-woodMixed.png" />
+              <div class="wastePrice">€ 0 / Kilo</div>
+              <div class="companyName">MVV Umwelt</div>
+              <div class="consumerRate">
+                <div class="crText">Consumer rate:</div>
+                <img class="imageStar" src="../static/img/image-29.png" />
+              </div>
+              <div class="earliestPickupDate">Earliest pickup date: 30.11.2023</div>
+              <div class="pickupButtons">
+                <div class="buttonDetails"><div class="buttonText">Details</div></div>
+                <div class="buttonOrderPickup"><a href="{{ url_for('pickup_unloggedin') }}"><div class="buttonText">Order Pickup</div></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="olProducts-line">
+            <div class="waste">
+              <div class="wasteName">Wood mixed</div>
+              <img class="wastePic" src="../static/img/waste-woodMixed.png" />
+              <div class="wastePrice">€ 0.05 / Kilo</div>
+              <div class="companyName">Müller-Guttenbrunn Group</div>
+              <div class="consumerRate">
+                <div class="crText">Consumer rate:</div>
+                <img class="imageStar" src="../static/img/image-29.png" />
+              </div>
+              <div class="earliestPickupDate">Earliest pickup date: 30.11.2023</div>
+              <div class="pickupButtons">
+                <div class="buttonDetails"><div class="buttonText">Details</div></div>
+                <div class="buttonOrderPickup"><a href="{{ url_for('pickup_unloggedin') }}"><div class="buttonText">Order Pickup</div></a></div>
+              </div>
+            </div>
+            <div class="waste">
+              <div class="wasteName">Aluminum mixed</div>
+              <img class="wastePic" src="../static/img/waste-aluminumMixed.png" />
+              <div class="wastePrice">€ 0.97 / Kilo</div>
+              <div class="companyName">Schroll Umwelttechnik GmbH</div>
+              <div class="consumerRate">
+                <div class="crText">Consumer rate:</div>
+                <img class="imageStar" src="../static/img/image-29.png" />
+              </div>
+              <div class="earliestPickupDate">Earliest pickup date: 28.11.2023</div>
+              <div class="pickupButtons">
+                <div class="buttonDetails"><div class="buttonText">Details</div></div>
+                <div class="buttonOrderPickup"><a href="{{ url_for('pickup_unloggedin') }}"><div class="buttonText">Order Pickup</div></a></div>
+              </div>
+            </div>
+            <div class="waste">
+              <div class="wasteName">Aluminum shavings</div>
+              <img class="wastePic" src="../static/img/waste-aluminumMixed.png" />
+              <div class="wastePrice">€ 0.77 / Kilo</div>
+              <div class="companyName">Müller-Guttenbrunn Group</div>
+              <div class="consumerRate">
+                <div class="crText">Consumer rate:</div>
+                <img class="imageStar" src="../static/img/image-29.png" />
+              </div>
+              <div class="earliestPickupDate">Earliest pickup date: 30.11.2023</div>
+              <div class="pickupButtons">
+                <div class="buttonDetails"><div class="buttonText">Details</div></div>
+                <div class="buttonOrderPickup"><a href="{{ url_for('pickup_unloggedin') }}"><div class="buttonText">Order Pickup</div></a></div>
+              </div>
+            </div>
+            <div class="waste">
+              <div class="wasteName">Plastic (PVC)</div>
+              <img class="wastePic" src="../static/img/waste-plastic.png" />
+              <div class="wastePrice">€ 0.34 / Kilo</div>
+              <div class="companyName">Recyclingzentrum Mannheim</div>
+              <div class="consumerRate">
+                <div class="crText">Consumer rate:</div>
+                <img class="imageStar" src="../static/img/image-29.png" />
+              </div>
+              <div class="earliestPickupDate">Earliest pickup date: 01.12.2023</div>
+              <div class="pickupButtons">
+                <div class="buttonDetails"><div class="buttonText">Details</div></div>
+                <div class="buttonOrderPickup"><a href="{{ url_for('pickup_unloggedin') }}"><div class="buttonText">Order Pickup</div></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="rectangle"></div>
+    </div>
+
+  </body>
+</html>
