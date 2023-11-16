@@ -1,13 +1,9 @@
 runtime: python38
 entrypoint: gunicorn -b :$PORT main:app
 
-env_variables:
-  DATABASE_URL: "your_database_connection_string"
-  API_KEY: "your_api_key"
-
 handlers:
 - url: /static
-  static_dir: app/static
+  static_dir: /static
 
 - url: /.*
   script: auto
