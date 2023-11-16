@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>Login</title>
     <link rel="stylesheet" type = "text/css" href="../static/style_login3.css"/>
-    <script type="text/javascript" src="login_pageChange.js"></script>
-    <script type="text/javascript" src="loginAndRegister.js"></script>
+    
   </head>
   <body>
     <div class="control">
@@ -19,7 +18,7 @@
           <p>Password</p>
           <input type="password" placeholder="password" id="login-pw"/>
           <br/>
-          <input type="submit" value="Login" onclick="login()"/>
+          <a href="{{ url_for('dashboardlogged') }}"><input type="submit" value="Login" onclick="login()"/></a>
         </div>
         <div>
           <p>Business E-mail</p>
@@ -34,4 +33,6 @@
       </div>
     </div>
   </body>
+  <script type="text/javascript" src="login_pageChange.js"></script>
+  <script type="text/javascript" src="loginAndRegister.js"></script>
 </html>
