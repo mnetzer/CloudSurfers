@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type = "text/css" href="../static/test.css"/>
+
+  </head>
+  <body>
+    <input list="browsers" name="myBrowser">
+    <datalist id="browsers">
+      <option value="Chrome">
+      <option value="Firefox">
+      <option value="Internet Explorer">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+
+    <textarea rows="5" cols="20">请介绍一下你自己</textarea>
+
+    <input type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">
+    <input type="text" maxlength="2" oninput="value=value.replace(/[^\d]/g,'')">
+    <input type="date"/>
+    <input type="text" name="text1" value="0">
+    <button type="button" name="button" onclick="text1.value='example'">button</button>
+
+    <script>
+
+    </script>
+    <input type="text" name="" value="0" id="demo">
+    <button type="button" onclick="myFunction("demo","test content")">点击这里</button>
+
+    <input type="text" name="" value="0" id="demo2">
+    <label for="switch">
+      <input type="checkbox" name="switch" id="switch1"/>
+    </label>
+
+    <input type="checkbox" name="switch2" id="switch2"/>
+
+  </body>
+  <script type="text/javascript" src="test.js"></script>
+</html>
