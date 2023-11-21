@@ -2,149 +2,193 @@
 <html>
   <head>
     <link rel="stylesheet" href="/static/globals.css" />
+<!-- change accordingly in css -->
     <link rel="stylesheet" href="/static/pickuplogged.css" />
   </head>
   <body>
-    <div class="pickup-order-logged">
+    <div class="pickup-order">
       <div class="div">
-        <div class="overlap"><div class="text-wrapper">Order pickup</div></div>
+<!-- Update_item 01 00 -->
+        <div class="overlap" onclick="submitOrder()"><div class="text-wrapper">Order pickup</div></div>
         <div class="overlap-group"><div class="text-wrapper-2">Save in templates</div></div>
-        <div class="div-wrapper"><a href="{{ url_for('cancel') }}"><div class="text-wrapper-3">Cancel</div></a></div>
+<!-- Update_item 02 00 -->
+        <div class="div-wrapper" onclick="cancelOrder()"><div class="text-wrapper-3">Cancel</div></div>
         <div class="overlap-2">
           <div class="overlap-3">
             <div class="group">
-              <div class="ellipse-wrapper"><div class="ellipse"></div></div>
+              <div class="overlap-group-2">
+<!-- Update_item 03 00 -->
+                <input type="checkbox" class="checkboxes" id="cbAddress"/>
+              </div>
             </div>
-            <div class="text-wrapper-4">Pickup date*</div>
+<!-- Update_item 04 00 -->
+            <input class="text-wrapper-input" type="date" placeholder="Pickup Date*" id="tw6"/>
             <div class="overlap-4">
               <div class="text-wrapper-5">Address</div>
               <div class="text-wrapper-6">Use sender information</div>
             </div>
-            <div class="text-wrapper-7">Werner-Heisenberg-Straße 20</div>
-            <div class="text-wrapper-8">68169 Mannheim</div>
-            <div class="text-wrapper-9">Germany</div>
+<!-- Update_item 05 & 06 & 07 00 -->
+              <input class="text-wrapper-input" type="text" placeholder="Street and house number*" id="tw9"/>
+              <input class="text-wrapper-input" type="text" placeholder="City Code*" oninput="value=value.replace(/[^\d]/g,'')" id="tw10"/>
+              <input class="text-wrapper-input" type="text" placeholder="Country*" id="tw11"/>
             <div class="overlap-5">
-              <div class="text-wrapper-10">HH</div>
-              <div class="text-wrapper-11">MM</div>
+<!-- Update_item 08 & 09 00 -->
+              <input class="text-wrapper-input" placeholder="HH" maxlength="2" oninput="value=value.replace(/[^\d]/g,'')" id="tw12a"/>
+              <input class="text-wrapper-input" placeholder="HH" maxlength="2" oninput="value=value.replace(/[^\d]/g,'')" id="tw13a"/>
               <div class="text-wrapper-12">From</div>
               <div class="text-wrapper-13">:</div>
-              <img class="line" src="/static/img/line-6.svg" />
+<!-- delete line -->
+<!--          <img class="line" src="/static/img/line-6.svg" /> -->
+<!-- delete line -->
+<!--          <img class="img" src="/static/img/line-6.svg" /> -->
             </div>
             <div class="overlap-6">
-              <div class="text-wrapper-10">HH</div>
-              <div class="text-wrapper-11">MM</div>
+<!-- Update_item 10 & 11 00 -->
+              <input class="text-wrapper-input" placeholder="HH" maxlength="2" oninput="value=value.replace(/[^\d]/g,'')" id="tw12b"/>
+              <input class="text-wrapper-input" placeholder="HH" maxlength="2" oninput="value=value.replace(/[^\d]/g,'')" id="tw13b"/>
               <div class="text-wrapper-12">Until</div>
               <div class="text-wrapper-13">:</div>
-              <img class="line" src="/static/img/line-6.svg" />
-              <img class="img" src="/static/img/line-6.svg" />
+<!-- delete line 00 -->
+<!--          <img class="line" src="/static/img/line-6.svg" /> -->
+<!-- delete line 00 -->
+<!--          <img class="line" src="/static/img/line-6.svg" /> -->
             </div>
-            <img class="line-2" src="/static/img/line-24.svg" />
+<!-- delete line 2, 4, 5, 6 00 -->
+<!--            <img class="line-2" src="/static/img/line-24.svg" /> -->
             <img class="line-3" src="/static/img/line-24.svg" />
-            <img class="line-4" src="/static/img/line-24.svg" />
+<!--            <img class="line-4" src="/static/img/line-24.svg" />
             <img class="line-5" src="/static/img/line-24.svg" />
-            <img class="line-6" src="/static/img/line-24.svg" />
-            <img class="line-7" src="/static/img/line-6.svg" />
-            <img class="image" src="/static/img/image-4.png" />
+            <img class="line-6" src="/static/img/line-24.svg" /> -->
+<!-- delete image? -->
+<!--            <img class="image" src="/static/img/image-4.png" /> -->
           </div>
           <div class="text-wrapper-14">Pickup information</div>
         </div>
         <div class="overlap-7">
           <div class="overlap-8">
             <div class="overlap-wrapper">
-              <div class="overlap-9">
-                <div class="ellipse-2"></div>
-                <div class="rectangle"></div>
+              <div class="overlap-group-2">
+<!-- Button to checkbox 00 -->
+                <input type="checkbox" class="checkboxes" id="cbAddress2"/>
+                <!-- <div class="ellipse"></div>
+                <div class="rectangle"></div> -->
               </div>
             </div>
             <div class="overlap-group-wrapper">
-              <div class="ellipse-wrapper"><div class="ellipse"></div></div>
+<!-- Button to checkbox 00 -->
+              <input type="checkbox" class="checkboxes" id="cbAddress3"/>
+              <!-- <div class="ellipse-wrapper"><div class="ellipse-2"></div></div>-->
             </div>
-            <div class="overlap-10">
+            <div class="overlap-group-3">
               <div class="group-2">
-                <div class="overlap-9">
-                  <div class="ellipse-2"></div>
-                  <div class="rectangle"></div>
+                <div class="overlap-group-2">
+<!-- Button to checkbox 00 -->
+                  <input type="checkbox" class="checkboxes" id="cbAddress4"/>
+                  <!-- <div class="ellipse"></div>
+                  <div class="rectangle"></div> -->
                 </div>
               </div>
               <div class="text-wrapper-15">Required</div>
             </div>
-            <div class="overlap-11">
+            <div class="overlap-9">
               <div class="text-wrapper-5">Consignment object</div>
               <div class="text-wrapper-16">Hazardous goods</div>
             </div>
-            <div class="overlap-group-2">
+            <div class="overlap-10">
               <div class="text-wrapper-5">Packaging</div>
               <div class="text-wrapper-17">Europool System</div>
             </div>
             <div class="text-wrapper-18">Additional loading equipment</div>
-            <div class="overlap-12">
-              <div class="text-wrapper-19">Euro pallets</div>
-              <div class="text-wrapper-19">Euro pallets</div>
+            <div class="overlap-11">
+<!-- Update_item 12 & 13 00 -->
+              <input class="text-wrapper-input" list="euroPallets" placeholder="Euro pallets*" id = "tw22"/>
+              <datalist id="euroPallets">
+                <option value="Opt01">
+                <option value="Opt02">
+                <option value="Opt03">
+              </datalist>
             </div>
-            <div class="text-wrapper-20">Item name*</div>
-            <div class="text-wrapper-21">Packaging type</div>
-            <div class="text-wrapper-22">L (cm)</div>
-            <div class="text-wrapper-23">W (cm)</div>
-            <div class="text-wrapper-24">H (cm)</div>
-            <div class="text-wrapper-25">Net weight*</div>
-            <div class="text-wrapper-26">Number of units</div>
+<!-- Update_item 14 & 15 & 16 & 17 & 18 & 19 & 20 00 -->
+            <input class="text-wrapper-input" type="text" placeholder="Item name*" id = "tw23"/>
+            <input class="text-wrapper-input" type="text" placeholder="Packaging type*" id = "tw24"/>
+            <input class="text-wrapper-input" type="text" placeholder="L (cm)" oninput="value=value.replace(/[^\d]/g,'')" id = "tw25"/>
+            <input class="text-wrapper-input" type="text" placeholder="W (cm)" oninput="value=value.replace(/[^\d]/g,'')" id = "tw26"/>
+            <input class="text-wrapper-input" type="text" placeholder="H (cm)" oninput="value=value.replace(/[^\d]/g,'')" id = "tw27"/>
+            <input class="text-wrapper-input" type="text" placeholder="Net weight*" oninput="value=value.replace(/[^\d]/g,'')" id = "tw28"/>
+            <input class="text-wrapper-input" type="text" placeholder="Number of units*" oninput="value=value.replace(/[^\d]/g,'')" id = "tw29"/>
+<!-- delete line: keep 7, 8, 9 -->
+            <img class="line-7" src="/static/img/line-24.svg" />
             <img class="line-8" src="/static/img/line-24.svg" />
             <img class="line-9" src="/static/img/line-24.svg" />
-            <img class="line-10" src="/static/img/line-24.svg" />
-            <img class="line-11" src="/static/img/line-24.svg" />
+<!--            <img class="line-10" src="/static/img/line-24.svg" />
+            <img class="line-11" src="/static/img/line-28.svg" />
             <img class="line-12" src="/static/img/line-28.svg" />
-            <img class="line-13" src="/static/img/line-28.svg" />
+            <img class="line-13" src="/static/img/line-32.svg" />
             <img class="line-14" src="/static/img/line-32.svg" />
             <img class="line-15" src="/static/img/line-32.svg" />
-            <img class="line-16" src="/static/img/line-32.svg" />
+            <img class="line-16" src="/static/img/line-28.svg" />
             <img class="line-17" src="/static/img/line-28.svg" />
-            <img class="line-18" src="/static/img/line-28.svg" />
-            <div class="polygon-wrapper"><img class="polygon" src="/static/img/polygon-2.svg" /></div>
+-->
+<!-- delete image? (triangle for dropdown)-->
+            <!-- <div class="polygon-wrapper"><img class="polygon" src="/static/img/polygon-2.svg" /></div> -->
           </div>
           <div class="text-wrapper-27">Shipment information</div>
           <div class="download-removebg-wrapper">
             <img class="download-removebg" src="/static/img/download-2-removebg-preview-1.png" />
           </div>
         </div>
-        <div class="overlap-13">
-          <div class="overlap-8"><div class="text-wrapper-28">Insert additional information here.</div></div>
-          <div class="text-wrapper-27">Additional&nbsp;&nbsp;details</div>
+        <div class="overlap-12">
+          <div class="overlap-8">
+<!-- Update_item 21 00 -->
+            <textarea class="text-wrapper-input" placeholder="Insert additional information here." col=30 row=30 id = "tw31"/></textarea>
+          </div>
+<!-- Update_item 22 00 -->
+          <div class="text-wrapper-27">Additiona details</div>
         </div>
-        <div class="overlap-14">
+        <div class="overlap-13">
           <div class="group-3">
-            <div class="overlap-9">
-              <div class="ellipse-2"></div>
-              <div class="rectangle"></div>
+            <div class="overlap-group-2">
+<!-- Button to checkbox 00 -->
+              <input type="checkbox" class="checkboxes" id="cbAddress5"/>
+              <!-- <div class="ellipse"></div>
+              <div class="rectangle"></div> -->
             </div>
           </div>
           <div class="rectangle-2"></div>
           <div class="text-wrapper-29">Sender information</div>
           <div class="rectangle-3"></div>
           <div class="group-4">
-            <div class="ellipse-wrapper"><div class="ellipse"></div></div>
+<!-- Button to checkbox -->
+            <input type="checkbox" class="checkboxes" id="cbAddress6"/>
+<!--            <div class="ellipse-wrapper"><div class="ellipse-2"></div></div> -->
           </div>
-          <div class="group-5"><div class="ellipse-3"></div></div>
-          <div class="text-wrapper-30">Use my contact details</div>
-          <div class="text-wrapper-31">MA Team</div>
-          <div class="text-wrapper-32">Anne Mustermann</div>
-          <div class="text-wrapper-33">+49 1576 520067891, anne.mustermann@ma-team.de</div>
+
+          <div class="group-5">
+            <div class="overlap-14">
+              <div class="ellipse-3"></div>
+              <div class="text-wrapper-30">Logo of Customer</div>
+            </div>
+          </div>
+          <div class="text-wrapper-31">Use my contact details</div>
+          <div class="text-wrapper-32">MA Team</div>
+          <div class="text-wrapper-33">Anne Mustermann</div>
+          <div class="text-wrapper-34">+49 1576 520067891, anne.mustermann@ma-team.de</div>
           <p class="p">Werner-Heisenberg-Straße 20, 68169 Mannheim, Germany</p>
-          <img class="line-19" src="/static/img/line-24.svg" />
+          <img class="line-18" src="/static/img/line-24.svg" />
           <div class="rectangle-4"></div>
           <div class="ellipse-4"></div>
           <img class="technical-support" src="/static/img/technical-support-png-309009-removebg-preview-1.png" />
-          <img class="screenshot" src="/static/img/screenshot-2023-11-08-at-20-53-4.png" />
         </div>
         <div class="overlap-15">
           <div class="text-wrapper-14">Your chosen pickup offer</div>
           <div class="overlap-16">
-            <div class="text-wrapper-34">Recyclingzentrum Mannheim</div>
-            <div class="text-wrapper-35">Offer</div>
-            <div class="text-wrapper-36">Earliest pickup date</div>
-            <div class="text-wrapper-37">28.11.2023</div>
-            <div class="text-wrapper-38">€ 1.03 / kilo</div>
-            <div class="text-wrapper-39">Customer Rating</div>
-            <img class="line-20" src="/static/img/line-24.svg" />
+            <div class="text-wrapper-35">Recyclingzentrum Mannheim</div>
+            <div class="text-wrapper-36">Offer</div>
+            <div class="text-wrapper-37">Earliest pickup date</div>
+            <div class="text-wrapper-38">28.11.2023</div>
+            <div class="text-wrapper-39">€ 1.03 / kilo</div>
+            <div class="text-wrapper-40">Customer Rating</div>
+            <img class="line-19" src="/static/img/line-24.svg" />
             <img class="pavel-neznanov" src="/static/img/pavel-neznanov-w95fb7eecje-unsplash.png" />
             <img class="image-2" src="/static/img/image-85.png" />
             <img class="image-3" src="/static/img/image-85.png" />
@@ -153,15 +197,15 @@
           </div>
           <div class="overlap-17">
             <img class="rectangle-5" src="/static/img/rectangle-19.png" />
-            <div class="text-wrapper-40">Details</div>
+            <div class="text-wrapper-41">Details</div>
           </div>
         </div>
         <div class="overlap-18">
           <div class="rectangle-6"></div>
-          <div class="text-wrapper-41">Privacy and Security Declaration</div>
-          <div class="text-wrapper-42">Terms and Conditions</div>
-          <div class="text-wrapper-43">© 2023 Sustainaloop GmbH</div>
-          <div class="text-wrapper-44">Impressum | Legal Notice</div>
+          <div class="text-wrapper-42">Privacy and Security Declaration</div>
+          <div class="text-wrapper-43">Terms and Conditions</div>
+          <div class="text-wrapper-44">© 2023 Sustainaloop GmbH</div>
+          <div class="text-wrapper-45">Impressum | Legal Notice</div>
         </div>
         <div class="overlap-19">
           <img class="image-6" src="/static/img/image-82.png" />
@@ -170,18 +214,19 @@
           </div>
           <div class="overlap-20">
             <div class="overlap-21">
-              <div class="text-wrapper-45">Latest on Sustainability</div>
-              <div class="text-wrapper-46">MA Team</div>
+              <div class="text-wrapper-46">Latest on Sustainability</div>
+              <div class="text-wrapper-47">MA Team</div>
             </div>
-            <div class="text-wrapper-47">Anne Mustermann</div>
+            <div class="text-wrapper-48">Anne Mustermann</div>
           </div>
           <div class="overlap-22">
             <div class="ellipse-5"></div>
             <img class="screenshot-2" src="/static/img/screenshot-2023-11-08-at-20-53-4.png" />
           </div>
         </div>
-        <p class="select-from"><span class="span">Select from </span> <span class="text-wrapper-48">Templates</span></p>
       </div>
     </div>
   </body>
+<!-- Add js file 00 -->
+  <script type="text/javascript" src="pickupOrderFillIn.js"></script>
 </html>
