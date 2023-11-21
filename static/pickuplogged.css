@@ -1519,6 +1519,15 @@
   box-shadow: 0px 4px 4px #00000040;
 }
 
+.pickup-order .screenshot {
+  width: 148px;
+  height: 117px;
+  top: 96px;
+  left: 498px;
+  position: absolute;
+  object-fit: cover;
+}
+
 .pickup-order .screenshot-2 {
   width: 75px;
   height: 64px;
